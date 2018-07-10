@@ -1,0 +1,23 @@
+Update cookie
+---
+tags:
+    - Cookie
+parameters:
+  - name: cookie_name
+    in: path
+    type: string
+    required: true
+
+  - name: body
+    in: body
+    type: object
+    schema:
+        properties:
+          value:
+            type: string
+            description: value of the cookie
+responses:
+   200:
+     description: Update cookie
+   201:
+     description: Created new cookie

@@ -1,0 +1,9 @@
+Returns all cookies
+---
+tags:
+    - Cookie
+parameters: []
+responses:
+   200:
+     description: returns cookies data
+

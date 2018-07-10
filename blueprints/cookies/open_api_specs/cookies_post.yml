@@ -1,0 +1,22 @@
+Set cookie
+---
+tags:
+    - Cookie
+parameters:
+    - name: body
+      in: body
+      schema:
+        id: Cookie
+        required:
+            - name
+            - value
+        properties:
+          name:
+            type: string
+            description: name of cookie to remove
+          value:
+            type: string
+            description: value of new cookie
+responses:
+   201:
+     description: Set cookie

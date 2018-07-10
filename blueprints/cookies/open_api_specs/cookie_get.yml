@@ -1,0 +1,14 @@
+Get Specified cookie
+---
+tags:
+    - Cookie
+parameters:
+  - name: cookie_name
+    in: path
+    type: string
+    required: true
+responses:
+   200:
+     description: Returns cookie
+   404:
+     description: Not found
